@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "ft_strnstr": "c",
+        "libft.h": "c"
+    }
+}
