@@ -13,10 +13,10 @@ char *ft_strtrim(char const *s1, char const *set)
         return NULL;
     if(!set)
         return (ft_strdup(s1));
-    while(s1[i] && ft_strchr(set, s1[i]))
+    while(s1[i] && ft_strchr(set, s1[i]) != NULL)
         i++;
     j = ft_strlen(s1);
-    while(j > i && ft_strrchr(set, s1[j - 1]))
+    while(j > i && ft_strrchr(set, s1[j - 1]) != NULL)
         j--;
     str = (char *)malloc(sizeof(char) * (j - i) + 1);
     while(!str)
